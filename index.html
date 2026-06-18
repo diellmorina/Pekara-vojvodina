@@ -37,13 +37,14 @@
             <span></span>
           </button>
           <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#products">Products</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#testimonials">Reviews</a>
-            <a href="#contact">Contact</a>
-            <a href="#contact" class="nav-btn">Order Now</a>
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#products" data-i18n="nav.products">Products</a>
+            <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+            <a href="#testimonials" data-i18n="nav.reviews">Reviews</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+            <a href="#contact" class="nav-btn" data-i18n="nav.order">Order Now</a>
           </div>
+        
         </nav>
       </header>
 
@@ -53,31 +54,31 @@
           <div class="container hero-content reveal">
             <div>
               <div class="hero-badges">
-                <span><i class="fa-solid fa-bread-slice"></i> Handmade daily</span>
-                <span><i class="fa-solid fa-medal"></i> Best bakery in Bosnia</span>
+                <span><i class="fa-solid fa-bread-slice"></i> <span data-i18n="hero.badge1">Handmade daily</span></span>
+                <span><i class="fa-solid fa-medal"></i> <span data-i18n="hero.badge2">Best bakery in Bosnia</span></span>
               </div>
-              <p class="eyebrow">Since 1998</p>
-              <h1>Freshly baked joy, every single day.</h1>
-              <p class="hero-text">
+              <p class="eyebrow" data-i18n="hero.eyebrow">Since 1998</p>
+              <h1 data-i18n="hero.title">Freshly baked joy, every single day.</h1>
+              <p class="hero-text" data-i18n="hero.text">
                 From warm bread and buttery pastries to elegant celebration cakes,
                 we bake with tradition, love, and the finest ingredients.
               </p>
               <div class="hero-actions">
-                <a href="#products" class="btn btn-primary">Explore Menu</a>
-                <a href="#gallery" class="btn btn-secondary">View Gallery</a>
+                <a href="#products" class="btn btn-primary" data-i18n="hero.cta1">Explore Menu</a>
+                <a href="#gallery" class="btn btn-secondary" data-i18n="hero.cta2">View Gallery</a>
               </div>
               <div class="hero-details">
                 <div>
                   <strong>2.4k+</strong>
-                  <span>happy customers</span>
+                  <span data-i18n="hero.stat1">happy customers</span>
                 </div>
                 <div>
                   <strong>30+</strong>
-                  <span>daily fresh items</span>
+                  <span data-i18n="hero.stat2">daily fresh items</span>
                 </div>
                 <div>
                   <strong>4.9</strong>
-                  <span>average rating</span>
+                  <span data-i18n="hero.stat3">average rating</span>
                 </div>
               </div>
             </div>
@@ -87,9 +88,9 @@
                 alt="Fresh bakery display"
               />
               <div class="hero-card-info">
-                <p>Today’s special</p>
-                <h3>Honey Pistachio Bun</h3>
-                <span>From 3.50 BAM</span>
+                <p data-i18n="hero.cardLabel">Today’s special</p>
+                <h3 data-i18n="hero.cardTitle">Honey Pistachio Bun</h3>
+                <span data-i18n="hero.cardPrice">From 3.50 BAM</span>
               </div>
             </div>
           </div>
@@ -98,19 +99,19 @@
         <section class="features container reveal">
           <div>
             <span class="feature-icon"><i class="fa-solid fa-seedling"></i></span>
-            <h4>Natural ingredients</h4>
+            <h4 data-i18n="features.1">Natural ingredients</h4>
           </div>
           <div>
             <span class="feature-icon"><i class="fa-solid fa-bread-slice"></i></span>
-            <h4>Made fresh daily</h4>
+            <h4 data-i18n="features.2">Made fresh daily</h4>
           </div>
           <div>
             <span class="feature-icon"><i class="fa-solid fa-cake-candles"></i></span>
-            <h4>Custom celebration cakes</h4>
+            <h4 data-i18n="features.3">Custom celebration cakes</h4>
           </div>
           <div>
             <span class="feature-icon"><i class="fa-solid fa-truck-fast"></i></span>
-            <h4>Fast delivery</h4>
+            <h4 data-i18n="features.4">Fast delivery</h4>
           </div>
         </section>
 
@@ -123,18 +124,18 @@
               />
             </div>
             <div class="about-text reveal">
-              <p class="eyebrow">Our story</p>
-              <h2>Traditional recipes, modern taste.</h2>
-              <p>
+              <p class="eyebrow" data-i18n="about.eyebrow">Our story</p>
+              <h2 data-i18n="about.title">Traditional recipes, modern taste.</h2>
+              <p data-i18n="about.text1">
                 At Pečara Vojvodina, we believe every loaf tells a story. Our
                 family-run bakery combines age-old Bosnian traditions with
                 creative flavors that bring people together.
               </p>
-              <p>
+              <p data-i18n="about.text2">
                 Every morning begins before sunrise with hand-kneaded dough,
                 slow fermentation, and careful attention to detail.
               </p>
-              <a href="#contact" class="btn btn-primary">Visit us</a>
+              <a href="#contact" class="btn btn-primary" data-i18n="about.cta">Visit us</a>
             </div>
           </div>
         </section>
@@ -142,32 +143,32 @@
         <section class="products section" id="products">
           <div class="container">
             <div class="section-heading reveal">
-              <p class="eyebrow">Signature treats</p>
-              <h2>Popular from our ovens</h2>
+              <p class="eyebrow" data-i18n="products.eyebrow">Signature treats</p>
+              <h2 data-i18n="products.title">Popular from our ovens</h2>
             </div>
             <div class="product-grid">
               <article class="product-card reveal">
                 <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=800&q=80" alt="Fresh bread" />
                 <div>
-                  <h3>Rustic sourdough</h3>
-                  <p>Slow-fermented loaf with a crisp crust and soft center.</p>
-                  <span>From 2.20 BAM</span>
+                  <h3 data-i18n="products.item1.title">Rustic sourdough</h3>
+                  <p data-i18n="products.item1.desc">Slow-fermented loaf with a crisp crust and soft center.</p>
+                  <span data-i18n="products.item1.price">From 2.20 BAM</span>
                 </div>
               </article>
               <article class="product-card reveal">
                 <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?auto=format&fit=crop&w=800&q=80" alt="Sweet bun" />
                 <div>
-                  <h3>Honey bun</h3>
-                  <p>Soft dough filled with honey, cinnamon, and toasted nuts.</p>
-                  <span>From 3.00 BAM</span>
+                  <h3 data-i18n="products.item2.title">Honey bun</h3>
+                  <p data-i18n="products.item2.desc">Soft dough filled with honey, cinnamon, and toasted nuts.</p>
+                  <span data-i18n="products.item2.price">From 3.00 BAM</span>
                 </div>
               </article>
               <article class="product-card reveal">
                 <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80" alt="Cake" />
                 <div>
-                  <h3>Birthday cake</h3>
-                  <p>Custom-made cakes with fresh cream, fruit, and elegant designs.</p>
-                  <span>From 25 BAM</span>
+                  <h3 data-i18n="products.item3.title">Birthday cake</h3>
+                  <p data-i18n="products.item3.desc">Custom-made cakes with fresh cream, fruit, and elegant designs.</p>
+                  <span data-i18n="products.item3.price">From 25 BAM</span>
                 </div>
               </article>
             </div>
@@ -177,8 +178,8 @@
         <section class="gallery section" id="gallery">
           <div class="container">
             <div class="section-heading reveal">
-              <p class="eyebrow">Gallery</p>
-              <h2>A glimpse of our daily craft</h2>
+              <p class="eyebrow" data-i18n="gallery.eyebrow">Gallery</p>
+              <h2 data-i18n="gallery.title">A glimpse of our daily craft</h2>
             </div>
             <div class="gallery-grid">
               <figure class="gallery-item large reveal">
@@ -203,27 +204,27 @@
         <section class="testimonials section" id="testimonials">
           <div class="container">
             <div class="section-heading reveal">
-              <p class="eyebrow">What people say</p>
-              <h2>Loved by our community</h2>
+              <p class="eyebrow" data-i18n="testimonials.eyebrow">What people say</p>
+              <h2 data-i18n="testimonials.title">Loved by our community</h2>
             </div>
             <div class="testimonial-grid">
               <blockquote class="testimonial-card reveal">
-                <p>
+                <p data-i18n="testimonials.1">
                   “The freshest bread in town, and the cakes are always stunning.”
                 </p>
-                <footer>— Amra K.</footer>
+                <footer data-i18n="testimonials.1name">— Amra K.</footer>
               </blockquote>
               <blockquote class="testimonial-card reveal">
-                <p>
+                <p data-i18n="testimonials.2">
                   “Every visit feels like a little celebration. The pastries are perfect.”
                 </p>
-                <footer>— Edin M.</footer>
+                <footer data-i18n="testimonials.2name">— Edin M.</footer>
               </blockquote>
               <blockquote class="testimonial-card reveal">
-                <p>
+                <p data-i18n="testimonials.3">
                   “We order for every birthday, and our guests always ask where it came from.”
                 </p>
-                <footer>— Lejla S.</footer>
+                <footer data-i18n="testimonials.3name">— Lejla S.</footer>
               </blockquote>
             </div>
           </div>
@@ -232,21 +233,24 @@
         <section class="contact section" id="contact">
           <div class="container contact-panel reveal">
             <div>
-              <p class="eyebrow">Visit us</p>
-              <h2>Come taste the tradition</h2>
+              <p class="eyebrow" data-i18n="contact.eyebrow">Visit us</p>
+              <h2 data-i18n="contact.title">Come taste the tradition</h2>
               <ul>
-                <li><span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span> Bulevar Oslobođenja 12, Novi Sad, Bosnia</li>
-                <li><span class="contact-icon"><i class="fa-solid fa-clock"></i></span> Mon–Sat: 6:00 AM – 8:00 PM</li>
+                <li><span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span> <span data-i18n="contact.address">Bulevar Oslobođenja 12, Novi Sad, Bosnia</span></li>
+                <li><span class="contact-icon"><i class="fa-solid fa-clock"></i></span> <span data-i18n="contact.hours">Mon–Sat: 6:00 AM – 8:00 PM</span></li>
                 <li><span class="contact-icon"><i class="fa-solid fa-phone"></i></span> +387 61 123 456</li>
                 <li><span class="contact-icon"><i class="fa-solid fa-envelope"></i></span> info@pekaravojvodina.ba</li>
               </ul>
             </div>
-            <form action="https://formspree.io/f/mjgdqjpz" method="POST">
-              <input type="text" name="name" placeholder="Your name" required />
-              <input type="email" name="email" placeholder="Email address" required />
-              <textarea name="message" rows="4" placeholder="Tell us what you would like to order" required></textarea>
-              <button type="submit" class="btn btn-primary">Send Inquiry</button>
-            </form>
+            <div class="contact-form-wrap">
+              <div class="form-success" id="form-success" data-i18n="contact.success">Message sent successfully!</div>
+              <form action="https://formspree.io/f/mjgdqjpz" method="POST">
+                <input type="text" name="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="Your name" required />
+                <input type="email" name="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="Email address" required />
+                <textarea name="message" rows="4" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Tell us what you would like to order" required></textarea>
+                <button type="submit" class="btn btn-primary" data-i18n="contact.button">Send Inquiry</button>
+              </form>
+            </div>
           </div>
         </section>
       </main>
