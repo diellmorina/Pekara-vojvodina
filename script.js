@@ -20,11 +20,10 @@ window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
 
 const form = document.querySelector('form');
-form?.addEventListener('submit', (e) => {
-  e.preventDefault();
+form?.addEventListener('submit', () => {
   const button = form.querySelector('button');
   if (button) {
-    button.textContent = 'Message sent!';
+    button.textContent = 'Sending...';
     button.disabled = true;
   }
 });

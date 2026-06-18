@@ -14,6 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -46,8 +53,8 @@
           <div class="container hero-content reveal">
             <div>
               <div class="hero-badges">
-                <span>🍞 Handmade daily</span>
-                <span>🏆 Best bakery in Bosnia</span>
+                <span><i class="fa-solid fa-bread-slice"></i> Handmade daily</span>
+                <span><i class="fa-solid fa-medal"></i> Best bakery in Bosnia</span>
               </div>
               <p class="eyebrow">Since 1998</p>
               <h1>Freshly baked joy, every single day.</h1>
@@ -90,19 +97,19 @@
 
         <section class="features container reveal">
           <div>
-            <span>🌿</span>
+            <span class="feature-icon"><i class="fa-solid fa-seedling"></i></span>
             <h4>Natural ingredients</h4>
           </div>
           <div>
-            <span>🥖</span>
+            <span class="feature-icon"><i class="fa-solid fa-bread-slice"></i></span>
             <h4>Made fresh daily</h4>
           </div>
           <div>
-            <span>🎂</span>
+            <span class="feature-icon"><i class="fa-solid fa-cake-candles"></i></span>
             <h4>Custom celebration cakes</h4>
           </div>
           <div>
-            <span>🚚</span>
+            <span class="feature-icon"><i class="fa-solid fa-truck-fast"></i></span>
             <h4>Fast delivery</h4>
           </div>
         </section>
@@ -228,16 +235,16 @@
               <p class="eyebrow">Visit us</p>
               <h2>Come taste the tradition</h2>
               <ul>
-                <li>📍 Bulevar Oslobođenja 12, Novi Sad, Bosnia</li>
-                <li>🕘 Mon–Sat: 6:00 AM – 8:00 PM</li>
-                <li>📞 +387 61 123 456</li>
-                <li>✉️ info@pekaravojvodina.ba</li>
+                <li><span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span> Bulevar Oslobođenja 12, Novi Sad, Bosnia</li>
+                <li><span class="contact-icon"><i class="fa-solid fa-clock"></i></span> Mon–Sat: 6:00 AM – 8:00 PM</li>
+                <li><span class="contact-icon"><i class="fa-solid fa-phone"></i></span> +387 61 123 456</li>
+                <li><span class="contact-icon"><i class="fa-solid fa-envelope"></i></span> info@pekaravojvodina.ba</li>
               </ul>
             </div>
-            <form>
-              <input type="text" placeholder="Your name" />
-              <input type="email" placeholder="Email address" />
-              <textarea rows="4" placeholder="Tell us what you would like to order"></textarea>
+            <form action="https://formspree.io/f/mjgdqjpz" method="POST">
+              <input type="text" name="name" placeholder="Your name" required />
+              <input type="email" name="email" placeholder="Email address" required />
+              <textarea name="message" rows="4" placeholder="Tell us what you would like to order" required></textarea>
               <button type="submit" class="btn btn-primary">Send Inquiry</button>
             </form>
           </div>
