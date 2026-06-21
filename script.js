@@ -1,3 +1,36 @@
+const loadingScreen = document.getElementById('loading-screen');
+const loadingText = document.getElementById('loading-text');
+const loadingProgressBar = document.getElementById('loading-progress-bar');
+
+window.addEventListener('load', () => {
+  const duration = 3000;
+  const startTime = performance.now();
+
+  const updateProgress = (now) => {
+    const progress = Math.min((now - startTime) / duration, 1);
+    const percent = Math.round(progress * 100);
+
+    if (loadingProgressBar) {
+      loadingProgressBar.style.width = `${percent}%`;
+    }
+
+    if (loadingText) {
+      loadingText.textContent = `${percent}%`;
+    }
+
+    if (progress < 1) {
+      requestAnimationFrame(updateProgress);
+    } else if (loadingScreen) {
+      loadingScreen.classList.add('hidden');
+      setTimeout(() => {
+        loadingScreen.remove();
+      }, 600);
+    }
+  };
+
+  requestAnimationFrame(updateProgress);
+});
+
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 

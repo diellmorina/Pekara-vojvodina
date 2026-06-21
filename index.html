@@ -24,12 +24,21 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="loading-screen" id="loading-screen">
+      <div class="loading-screen-inner">
+        <img src="logo.png" alt="Pekara Vojvodina logo" class="loading-logo" />
+        <div class="loading-progress-wrap">
+          <div class="loading-progress-bar" id="loading-progress-bar"></div>
+        </div>
+        <p id="loading-text">0%</p>
+      </div>
+    </div>
+
     <div class="page-shell">
       <header class="site-header">
         <nav class="nav container">
-          <a href="#home" class="logo">
-            <span class="logo-mark">PV</span>
-            <span>PEKARA VOJVODINA</span>
+          <a href="#home" class="logo" aria-label="Pekara Vojvodina home">
+            <img src="logo.png" alt="Pekara Vojvodina logo" class="logo-image" />
           </a>
           <button class="menu-toggle" aria-label="Open menu">
             <span></span>
