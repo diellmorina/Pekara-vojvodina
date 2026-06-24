@@ -33,10 +33,32 @@ window.addEventListener('load', () => {
 
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
+const hoursStatus = document.getElementById('hours-status');
+const hoursStatusText = document.getElementById('hours-status-text');
 
 menuToggle?.addEventListener('click', () => {
   navLinks?.classList.toggle('open');
 });
+
+const updateHoursStatus = () => {
+  if (!hoursStatus || !hoursStatusText) return;
+
+  const now = new Date();
+  const day = now.getDay();
+  const hour = now.getHours();
+  const minutes = now.getMinutes();
+  const currentMinutes = hour * 60 + minutes;
+  const openMinutes = 5 * 60;
+  const closeMinutes = 21 * 60;
+  const isOpen = day >= 1 && day <= 6 && currentMinutes >= openMinutes && currentMinutes <= closeMinutes;
+
+  hoursStatus.classList.toggle('open', isOpen);
+  hoursStatus.classList.toggle('closed', !isOpen);
+  hoursStatusText.textContent = isOpen ? 'Open' : 'Closed';
+};
+
+updateHoursStatus();
+setInterval(updateHoursStatus, 60000);
 
 const revealElements = document.querySelectorAll('.reveal');
 
